@@ -1,0 +1,27 @@
+/* Add google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Sans:wght@100;300;400&display=swap');
+
+/* Color Theme Swatches in Hex */
+.new-york-1-hex { color: #0D0D0D; }
+.new-york-2-hex { color: #F2F2F2; }
+.new-york-3-hex { color: #D90404; }
+.new-york-4-hex { color: #188FD9; }
+.new-york-5-hex { color: #0777D9; }
+
+/* Global style properties */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+    color: #0D0D0D
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+}
