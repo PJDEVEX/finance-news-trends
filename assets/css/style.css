@@ -16,12 +16,35 @@
     padding: 0;
 }
 
-body {
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 300;
-    color: #0D0D0D
-}
-
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
 }
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+    color: #0D0D0D;
+    font-size: 16px;
+    width: 100vw;
+
+
+    /* Style overal positiing and sizing of core elements of the site for small screens */
+    display: grid;
+    grid-template-areas: 
+    'nav header'
+    'nav content'
+    'nav sidebar' 
+    'nav footer';
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 80px 20fr 200px 60px;
+    
+}
+
+/* Setting individual areas of key elements */
+nav {
+    grid-area: header;
+
+}
+
+header {}
+
