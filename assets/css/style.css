@@ -27,24 +27,59 @@ body {
     font-size: 16px;
     width: 100vw;
 
-
     /* Style overal positiing and sizing of core elements of the site for small screens */
     display: grid;
     grid-template-areas: 
-    'nav header'
-    'nav content'
-    'nav sidebar' 
-    'nav footer';
+    'nav-container bradning-container'
+    'nav-container	news-container'
+    'nav-container	fin-tools-container'
+    'nav-container	footer';
+
     grid-template-columns: 300px 1fr;
-    grid-template-rows: 80px 20fr 200px 60px;
+    grid-template-rows: 80px 1fr 200px 60px;
     
 }
 
 /* Setting individual areas of key elements */
-nav {
-    grid-area: header;
-
+.bradning-container {
+    grid-area: bradning-container;
+    background-color: red;
 }
 
-header {}
+.nav-container {
+    grid-area: nav-container;
+    background-color: yellow;
+}
+
+.news-container {
+    grid-area: news-container;
+    background-color: green;
+}
+
+.fin-tools-container {
+    grid-area: fin-tools-container;
+    background-color: blue;
+}
+
+footer {
+    grid-area: footer;
+    background-color: indigo;
+}
+
+/* for larger screen sizes from 1024px and wide */
+@media screen and (min-width: 1024px) {
+    body {
+        grid-template-areas: 
+    'bradning-container bradning-container bradning-container'
+    'nav-container	news-container	fin-tools-container'
+    'footer	footer	footer';
+
+    grid-template-columns: 300px 1fr 300px;
+    grid-template-rows: 80px 1fr 60px;
+
+    }
+    
+
+
+}
 
