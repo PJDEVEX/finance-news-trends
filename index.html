@@ -23,25 +23,53 @@
     <!-- Branding area -->
     <header class="bradning-container">
         <div class="fnt-logo-area">
-            <div class="fnt-logo" role="img" aria-label="FnT logo - Finance News Trends" href="index.html"></div>
+            <div class="fnt-logo" role="img" aria-label="FnT logo - Finance News Trends">
+                <a href="index.html"></a>
+            </div>
         </div>
         <div class="google-adsense">Advertize here</div>
     </header>
     <!-- Nav bar -->
     <nav class="nav-container">Vertical Navbar
-        <ul>
-            <li>Finance News</li>
-            <li>Stock Market</li>
-            <li>Forex</li>
-            <li>Crypto</li>
-            <li>Banking</li>
-            <li>Business</li>
-            <li>Economy</li>
-        </ul>
+        <div class="hamburger-container">
+            <div class="menu-toggle">
+                <div class="hamburger">
+                    <div class="bars"></div>
+                    <div class="xmark"></div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-list">
+            <ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="#finance-news" id="finance-news">Finance News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#stock-market" id="stock-market">Stock Market</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#forex" id="forex">Forex</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#crypto" id="crypto">Crypto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#banking" id="banking">Banking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#business" id="business">Business</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#economy" id="economy">Economy</a>
+            </ul>
+        </div>
         <!-- Search bar -->
         <form>
-            <input type="search" placeholder="Search">
-            <button type="submit">Search</button>
+            <label for="search-input"></label>
+            <input id="search-input" type="search" placeholder="Search News">
+            <button class="search-btn" type="submit">
+                <i class="fa-light fa-magnifying-glass"></i>
+            </button>
         </form>
     </nav>
     <!-- News -->

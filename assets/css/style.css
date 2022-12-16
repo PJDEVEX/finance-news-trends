@@ -61,7 +61,7 @@ body {
 .bradning-container {
     grid-area: bradning-container;
     
-    /* Style positiing and areas in header section for small screens */
+    /* Style positing and areas in header section for small screens */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -83,7 +83,7 @@ body {
 .google-adsense {
     background:#F2F2F2;
     width: 60%;
-    height: :auto;
+    height: auto;
     margin: 10px 40px;
 }
 
