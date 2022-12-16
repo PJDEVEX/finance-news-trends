@@ -54,6 +54,7 @@ body {
 
     grid-template-columns: 300px 1fr;
     grid-template-rows: 100px 1fr 200px 60px;
+    
 
 }
 
@@ -67,7 +68,6 @@ body {
     justify-content: space-between;
     background: #0D0D0D;
     width: 100%;
-    padding: 5px;
 }
 
 .fnt-logo-area {
@@ -90,6 +90,44 @@ body {
 .nav-container {
     grid-area: nav-container;
     background-color: yellow;
+}
+
+/* style hamburger menu area */
+.hamburger-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem;
+}
+
+.hamburger {
+    cursor: pointer;
+    position: relative;
+    top: 17%;
+}
+
+/* Style hamburger horizantal bars */
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color:#3b4b59;
+    margin: 5px auto;
+    transition: all 0.5x ease;
+}
+
+/* Stlye for toggle effect */
+.menu-toggle.is-active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    transition: 0.3s;
+}
+.menu-toggle.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    transition: 0.3s;
 }
 
 .news-container {
@@ -118,5 +156,11 @@ footer {
         grid-template-columns: 1fr 5fr 1fr;
         grid-template-rows: 100px 1fr 60px;
 
+    }
+
+    /* Hide toggle menu */
+
+    .menu-toggle{
+        display: none;
     }
 }
