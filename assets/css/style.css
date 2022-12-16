@@ -2,11 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Sans:wght@100;300;400&display=swap');
 
 /* Color Theme Swatches in Hex */
-.new-york-1-hex { color: #0D0D0D; }
-.new-york-2-hex { color: #F2F2F2; }
-.new-york-3-hex { color: #D90404; }
-.new-york-4-hex { color: #188FD9; }
-.new-york-5-hex { color: #0777D9; }
+.new-york-1-hex {
+    color: #0D0D0D;
+}
+
+.new-york-2-hex {
+    color: #F2F2F2;
+}
+
+.new-york-3-hex {
+    color: #D90404;
+}
+
+.new-york-4-hex {
+    color: #188FD9;
+}
+
+.new-york-5-hex {
+    color: #0777D9;
+}
 
 /* Global style properties */
 
@@ -16,7 +30,10 @@
     padding: 0;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -25,25 +42,49 @@ body {
     font-weight: 300;
     color: #0D0D0D;
     font-size: 16px;
-    width: 100vw;
+    height: 100vh;
 
     /* Style overal positiing and sizing of core elements of the site for small screens */
     display: grid;
-    grid-template-areas: 
-    'nav-container bradning-container'
-    'nav-container	news-container'
-    'nav-container	fin-tools-container'
-    'nav-container	footer';
+    grid-template-areas:
+        'nav-container bradning-container'
+        'nav-container	news-container'
+        'nav-container	fin-tools-container'
+        'nav-container	footer';
 
     grid-template-columns: 300px 1fr;
-    grid-template-rows: 80px 1fr 200px 60px;
-    
+    grid-template-rows: 100px 1fr 200px 60px;
+
 }
 
 /* Setting individual areas of key elements */
 .bradning-container {
     grid-area: bradning-container;
-    background-color: red;
+    
+    /* Style positiing and areas in header section for small screens */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #0D0D0D;
+    width: 100%;
+    padding: 5px;
+}
+
+.fnt-logo-area {
+    width: 20%;
+    height: auto;
+}
+
+.fnt-logo {
+    background: url('../images/fnt-horizontal.webp');
+    width: 100%;
+}
+
+.google-adsense {
+    background:#F2F2F2;
+    width: 60%;
+    height: :auto;
+    margin: 10px 40px;
 }
 
 .nav-container {
@@ -69,17 +110,13 @@ footer {
 /* for larger screen sizes from 1024px and wide */
 @media screen and (min-width: 1024px) {
     body {
-        grid-template-areas: 
-    'bradning-container bradning-container bradning-container'
-    'nav-container	news-container	fin-tools-container'
-    'footer	footer	footer';
+        grid-template-areas:
+            'bradning-container bradning-container bradning-container'
+            'nav-container	news-container	fin-tools-container'
+            'footer	footer	footer';
 
-    grid-template-columns: 300px 1fr 300px;
-    grid-template-rows: 80px 1fr 60px;
+        grid-template-columns: 1fr 5fr 1fr;
+        grid-template-rows: 100px 1fr 60px;
 
     }
-    
-
-
 }
-
